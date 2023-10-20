@@ -4,6 +4,8 @@
     --bg-color: #e8f3f1;
     --black: #2f4858;
     --card-color: #BB84E8;
+    --border: .1rem solid var(--card-color);
+    --box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 *{
@@ -278,3 +280,60 @@ section{
     font-size: 1.8rem;
     padding: .5rem 0;
 }
+
+/* cupcake section */
+
+.cupcakes .wrapper .cupcake-card{
+    text-align: center;
+    background-color: #dfa1c8;
+    padding: 2rem ;
+    border: var(--border);
+}
+
+.cupcakes .wrapper .cupcake-card:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.cupcakes .wrapper .cupcake-card .icons a{
+    border: var(--border);
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin: 0.3rem;
+}
+
+.cupcakes .wrapper .cupcake-card .icons a:hover{
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+.cupcakes .wrapper .cupcake-card .img{
+    padding: 2.5rem 0;
+
+}
+
+.cupcakes .wrapper .cupcake-card .img img{
+    height: 20rem;
+
+}
+
+.cupcakes .wrapper .cupcake-card .content h3{
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.cupcakes .wrapper .cupcake-card .content .stars{
+    padding: 1.8rem;
+
+}
+.cupcakes .wrapper .cupcake-card .content .stars i{
+   font-size: 1.7rem;
+   color: var(--main-color);
+}
+.cupcakes .wrapper .cupcake-card .content .price{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
