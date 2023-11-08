@@ -47,8 +47,8 @@ section{
     letter-spacing: .2rem;
 }
 .title{
-    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), 
-    -2px 2px 0 var(--card-color), 2px -2px 0 var(--card-color);
+    text-shadow: 2px 2px 0 var(--card-color);/* , -2px -2px 0 var(--card-color),  */
+    /*-2px 2px 0 var(--card-color), 2px -2px 0 var(--card-color); */
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -316,7 +316,8 @@ section{
 }
 
 .cupcakes .wrapper .cupcake-card .img img{
-    height: 20rem;
+    /* height: 20rem; */
+    width: 100%;
 
 }
 
@@ -585,4 +586,69 @@ footer{
 
 .footer .credit span{
     color: var(--main-color);
+}
+
+/* for small screens i.e tablets phones small laptops */
+@media (max-width:992px){
+    html{
+        font-size: 55%;
+    }
+
+    .header .logo img{
+        height: 9rem;
+        
+    }
+}
+
+@media (max-width:768px){
+    section{
+        padding: 2rem;
+    }
+    .header .icons .menu-icon{
+        display: inline-block;
+    }
+    .home{
+        background-position: left;
+    }
+    .home .hero h3{
+        font-size: 4.5rem;
+    }
+    .home .hero p{
+        font-size: 1.5rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        background-color: #fff;
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: var(--main-color);
+        display: block;
+        font-size: 2rem;
+        padding:0.5rem;
+        margin: 1.5rem;
+    }
+
+    .header .search-form{
+        width: 92%;
+
+    }
+
+    .header .search-form.active{
+        right: 4%;
+        
+    }
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 50%;
+    }
 }
